@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  font-family: 'Merriweather', serif; }
+
+body {
+  margin: 0; }
+
+.main-coursel {
+  height: 100%; }
+  .main-coursel .slide {
+    height: 100%;
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: auto 100%;
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(https://cdn.css-tricks.com/backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */ }
+    .main-coursel .slide img {
+      height: 100%; }
+    .main-coursel .slide .headline {
+      position: absolute;
+      bottom: 5em;
+      left: 5em;
+      color: #fff;
+      font-style: italic;
+      text-transform: uppercase; }
+      .main-coursel .slide .headline h1 {
+        margin: 0;
+        font-weight: normal; }
+      .main-coursel .slide .headline h2 {
+        margin: 0; }
+      .main-coursel .slide .headline a {
+        margin: 0;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer; }
