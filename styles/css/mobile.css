@@ -5,36 +5,58 @@ html, body {
 body {
   margin: 0; }
 
-.main-coursel {
+img {
+  width: 100%; }
+
+.convoy-logo {
+  position: absolute;
+  width: 2.5em;
+  left: 4em;
+  top: 4em;
+  line-height: 0;
+  z-index: 1; }
+
+.instagram {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  right: 4em;
+  top: 4em;
+  z-index: 1; }
+  .instagram a {
+    display: block;
+    height: 100%; }
+
+.main-carousel {
   height: 100%; }
-  .main-coursel .slide {
-    height: 100%;
-    /* lt ie8 */
-    -ms-background-position-x: center;
-    -ms-background-position-y: bottom;
-    background-position: center bottom;
-    /* scale bg image proportionately */
-    background-size: auto 100%;
-    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
-    -ms-behavior: url(https://cdn.css-tricks.com/backgroundsize.min.htc);
-    /* prevent scaling past src width (or not) */
-    /* max-width: 1200px; */ }
-    .main-coursel .slide img {
+  .main-carousel > div {
+    height: 100%; }
+    .main-carousel > div > div {
       height: 100%; }
-    .main-coursel .slide .headline {
-      position: absolute;
-      bottom: 5em;
-      left: 5em;
+  .main-carousel img {
+    height: 100%; }
+  .main-carousel .headline {
+    position: absolute;
+    bottom: 4em;
+    left: 4em;
+    color: #fff;
+    text-transform: uppercase; }
+    .main-carousel .headline h1 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 4.5em;
+      letter-spacing: 0.05em;
+      line-height: 1.1em; }
+    .main-carousel .headline h2 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 4.75em;
+      letter-spacing: 0.05em;
+      line-height: 1.1em; }
+    .main-carousel .headline a {
+      margin: 0;
       color: #fff;
-      font-style: italic;
-      text-transform: uppercase; }
-      .main-coursel .slide .headline h1 {
-        margin: 0;
-        font-weight: normal; }
-      .main-coursel .slide .headline h2 {
-        margin: 0; }
-      .main-coursel .slide .headline a {
-        margin: 0;
-        color: #fff;
-        font-size: 1.5em;
-        cursor: pointer; }
+      font-size: 2em;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0; }

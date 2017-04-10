@@ -7,45 +7,68 @@ body {
 	margin: 0;
 }
 
-.main-coursel {
-	height: 100%;
-	.slide {
-		height: 100%;
-		/* lt ie8 */
-	  -ms-background-position-x: center;
-	  -ms-background-position-y: bottom;
-	  background-position: center bottom;
+img {
+	width: 100%;
+}
 
-	  /* scale bg image proportionately */
-	  background-size: auto 100%;
-	    
-	  /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
-	  -ms-behavior: url(https://cdn.css-tricks.com/backgroundsize.min.htc);
-	  /* prevent scaling past src width (or not) */
-	  /* max-width: 1200px; */
-		img {
-			height: 100%;
+.convoy-logo {
+	position: absolute;
+	width: 2.5em;
+	left: 4em;
+	top: 4em;
+	line-height: 0;
+	z-index: 1
+}
+
+.instagram {
+	position: absolute;
+	height: 2.5em;
+	width: 2.5em;
+	right: 4em;
+	top: 4em;
+	z-index: 1;
+	a {
+		display: block;
+		height: 100%;
+	}
+}
+
+.main-carousel {
+	height: 100%;
+	> div {
+		height: 100%;
+		> div { height: 100% }
+	}
+	img {
+		height: 100%;
+	}
+	.headline {
+		position: absolute;
+		bottom: 4em;
+		left: 4em;
+		color: #fff;
+		text-transform: uppercase;
+		h1 {
+			margin: 0;
+			font-weight: 300;
+			font-size: 4.5em;
+			letter-spacing: 0.05em;
+			line-height: 1.1em;
 		}
-		.headline {
-			position: absolute;
-			bottom: 5em;
-			left: 5em;
+		h2 {
+			margin: 0;
+			font-weight: 700;
+			font-size: 4.75em;
+			letter-spacing: 0.05em;
+			line-height: 1.1em;
+		}
+		a {
+			margin: 0;
 			color: #fff;
-			font-style: italic;
-			text-transform: uppercase;
-			h1 {
-				margin: 0;
-				font-weight: normal;
-			}
-			h2 {
-				margin: 0;
-			}
-			a {
-				margin: 0;
-				color: #fff;
-				font-size: 1.5em;
-				cursor: pointer;
-			}
+			font-size: 2em;
+			cursor: pointer;
+			text-decoration: none;
+			letter-spacing: 0;
 		}
 	}
 }
