@@ -50,6 +50,7 @@ img {
 		left: 4em;
 		color: #fff;
 		text-transform: uppercase;
+		font-style: italic;
 		h1 {
 			margin: 0;
 			font-weight: 300;
@@ -73,4 +74,27 @@ img {
 			letter-spacing: 0;
 		}
 	}
+}
+
+@media screen and (max-width: 400px) {
+	.convoy-logo {
+		top: 3em;
+		left: 3em;
+	}
+	.instagram {
+		top: 3em;
+		right: 3em;
+	}
+  .main-carousel {
+  	font-size: 0.7em;
+    .headline {
+    	h1 { font-size: 2.5em; }
+    	h2 { font-size: 3em; }
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .profile-pic {
+    float: right;
+  }
 }
