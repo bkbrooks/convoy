@@ -1,0 +1,120 @@
+html, body {
+  height: 100%;
+  font-family: 'Merriweather', serif; }
+
+body {
+  margin: 0; }
+  body .spinner {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%; }
+    body .spinner img {
+      height: 150px;
+      width: 150px; }
+
+.main {
+  height: 100%;
+  width: 100%; }
+
+img {
+  width: 100%; }
+
+.convoy-logo {
+  position: absolute;
+  width: 2.5em;
+  left: 4em;
+  top: 4em;
+  line-height: 0;
+  z-index: 1; }
+
+.instagram {
+  position: absolute;
+  height: 2.5em;
+  width: 2.5em;
+  right: 4em;
+  top: 4em;
+  z-index: 1; }
+  .instagram a {
+    display: block;
+    height: 100%;
+    -webkit-transition: 1s all;
+    transition: 1s all; }
+    .instagram a:hover {
+      opacity: 0.8; }
+
+.main-carousel {
+  height: 100%; }
+  .main-carousel > div {
+    height: 100%; }
+    .main-carousel > div > div {
+      height: 100%; }
+  .main-carousel img {
+    height: 100%;
+    width: auto;
+    position: relative; }
+  .main-carousel .callout {
+    position: absolute;
+    bottom: 4em;
+    left: 4em; }
+    .main-carousel .callout .headline {
+      font-size: 8em;
+      color: #fff;
+      text-transform: uppercase;
+      font-style: italic; }
+      .main-carousel .callout .headline h1 {
+        font-size: 1em;
+        margin: 0;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        line-height: 1.1em; }
+      .main-carousel .callout .headline h2 {
+        font-size: 1em;
+        margin: 0;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        line-height: 1.1em; }
+      .main-carousel .callout .headline a {
+        font-size: 0.625em;
+        display: block;
+        margin: 0;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+        letter-spacing: 0;
+        transition: 1s all; }
+        .main-carousel .callout .headline a:hover {
+          opacity: 0.8; }
+      .main-carousel .callout .headline .source {
+        font-size: 0.15em;
+        display: block; }
+        .main-carousel .callout .headline .source a {
+          display: inline;
+          font-size: 1em; }
+
+@media screen and (max-width: 1280px) {
+  .main-carousel .callout .headline {
+    font-size: 6em; } }
+@media screen and (max-width: 800px) {
+  .main-carousel .callout .headline {
+    font-size: 4em; } }
+@media screen and (max-width: 700px) {
+  .convoy-logo {
+    top: 2em;
+    left: 2em; }
+
+  .instagram {
+    top: 2em;
+    right: 2em; }
+
+  .main-carousel .callout {
+    bottom: 2em;
+    left: 2em; }
+    .main-carousel .callout .headline {
+      font-size: 3em; } }
+@media screen and (max-width: 600px) {
+  .main-carousel .callout .headline {
+    font-size: 2.5em; } }
+@media screen and (max-width: 420px) {
+  .main-carousel {
+    font-size: 0.7em; } }
